@@ -1,14 +1,7 @@
 @CHARSET "ISO-8859-1";
 
-.smf-content-header{
-	height: 55px; 
-	margin-left: 15px;
-	margin-top: 20px; 
-}
-
-.smf-content-title{
-	float: left; 
-	font-size: 30px;
+.margin-top-20{
+	margin-top: 20px !important;
 }
 
 .float-right{
@@ -16,5 +9,5 @@
 }
 
 .margin-right-15{
-	margin-right: 15px;
+	margin-right: 15px !important;
 }

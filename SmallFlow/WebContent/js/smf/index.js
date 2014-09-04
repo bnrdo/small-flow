@@ -2,9 +2,9 @@
  * 
  */
 
-var menu = {'mnu-1-dashboard' : 'dashboard.html',
-			'mnu-2-cashinflow' : 'cash-in.html',
-			'mnu-2-cashoutflow' : 'cash-out.html'};
+var menu = {'mnu-1-dashboard' : 'pages/dashboard.html',
+			'mnu-2-cashinflow' : 'pages/cash-in.html',
+			'mnu-2-cashoutflow' : 'pages/cash-out.html'};
 
 function loadToTarget(url, targetDiv) {
 	$("#" + targetDiv).load(url);
