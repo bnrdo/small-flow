@@ -3,11 +3,23 @@
  */
 
 var menu = {'mnu-1-dashboard' : 'pages/dashboard.html',
-			'mnu-2-cashinflow' : 'pages/cash-in.html',
+			'mnu-2-cashinflow' : 'pages/cash-inflow/cash-inflow.html',
 			'mnu-2-cashoutflow' : 'pages/cash-out.html'};
 
 function loadToTarget(url, targetDiv) {
 	$("#" + targetDiv).load(url);
+}
+
+function postJsonAndLoadToTarget(url, targetDiv, json){
+	$.ajax({
+	       url : url,
+	       type : 'POST',
+	       contentType : 'application/json',
+	       data : JSON.stringify(json),
+	       success : function(data){
+	    	   $('#' + targetDiv).html(data);
+	       }
+		});
 }
 
 function activeMenu(aObj) {

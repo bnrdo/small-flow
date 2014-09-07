@@ -6,7 +6,10 @@
 	<display-name>AtroPOS</display-name>
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>/WEB-INF/context.xml</param-value>
+		<param-value>
+			/WEB-INF/context.xml
+			/WEB-INF/persistence.xml
+		</param-value>
 	</context-param>
 	<filter>
 		<filter-name>CharacterEncodingFilter</filter-name>
