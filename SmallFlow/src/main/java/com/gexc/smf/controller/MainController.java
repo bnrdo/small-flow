@@ -23,9 +23,9 @@ public class MainController {
 		return "index";
 	}
 	
-	@ResponseBody
+	/*@ResponseBody
 	@RequestMapping(value = "/read.do", method = RequestMethod.GET)
 	protected TableData<CashInflow> read(HttpServletRequest request) throws Exception {
 		return new TableData<CashInflow>(ciServ.listAll());
-	}
+	}*/
 }

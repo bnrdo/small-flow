@@ -23,14 +23,14 @@ public class CashInflow {
 	
 	@Column(name = "cin_activity_id")
 	private Integer activityIdFk;
-    
-	@NotNull
-	@Column(name = "cin_date")
-	private Date date;
 	
 	@NotNull
 	@Column(name = "cin_amount")
 	private BigDecimal amount;
+    
+	@NotNull
+	@Column(name = "cin_date")
+	private Date date;
 	
 	@Column(name = "cin_notes")
 	private String notes;

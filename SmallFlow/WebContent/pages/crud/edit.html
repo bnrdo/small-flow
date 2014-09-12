@@ -12,7 +12,7 @@
 				<div class="panel-body">
 					<div class="row">
 						<div class="col-lg-6">
-							<form id="cinForm" role="form" action="#" th:action="@{${oper eq 'delete' ? '/nedip/delete.do' : '/nedip/save.do'}}" th:object="${cashInflowForm}" method="POST">
+							<form id="cinForm" role="form" action="#" th:action="@{${oper eq 'delete' ? '/cash-inflow/delete.do' : '/cash-inflow/save.do'}}" th:object="${form}" method="POST">
 								<div class="form-group">
 									<label>Flow from</label> 
 									<select class="form-control" th:disabled="${isReadOnly}" th:field="*{activityIdFk}">
@@ -43,6 +43,7 @@
 									<button type="button" class="btn btn-primary float-right" onclick="back()">Back</button>
 								</div>
 								<input type="hidden" th:field="*{id}"/>
+								<span th:text="${formProperties}"> de puta</span>
 							</form>
 						</div>
 					</div>
@@ -64,7 +65,7 @@
 		});
 		
 		function back(){
-			loadToTarget('pages/cash-inflow/cash-inflow.html', 'page-content');
+			loadToTarget('cash-inflow/back.do', 'page-content');
 		}
 	</script>
 </body>

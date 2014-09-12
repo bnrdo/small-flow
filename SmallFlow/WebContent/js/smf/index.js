@@ -3,7 +3,7 @@
  */
 
 var menu = {'mnu-1-dashboard' : 'pages/dashboard.html',
-			'mnu-2-cashinflow' : 'pages/cash-inflow/cash-inflow.html',
+			'mnu-2-cashinflow' : 'cash-inflow/crud.do',
 			'mnu-2-cashoutflow' : 'pages/cash-out.html'};
 
 function loadToTarget(url, targetDiv) {

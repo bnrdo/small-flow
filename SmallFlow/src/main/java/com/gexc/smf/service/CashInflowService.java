@@ -11,7 +11,7 @@ import com.gexc.smf.dao.CashInflowDao;
 import com.gexc.smf.domain.CashInflow;
 
 @Service
-public class CashInflowService {
+public class CashInflowService{
 	
 	@Autowired
 	private CashInflowDao cashInflowDao;
